@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Finance Automation</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Netsuite_CustomizedFeatures_Automation</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 24, 2023 07:56:48 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Vision Installer Vendor Bills</p>
+            <p class="text-sm">
+              <span>7:56:50 pm</span> / <span>00:03:04:449</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Vision Installer Vendor Bills</h5>
+<span class='badge badge-success'>08.24.2023 7:56:50 pm</span>
+<span class='badge badge-danger'>08.24.2023 7:59:54 pm</span>
+<span class='badge badge-default'>00:03:04:449</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User verifies the vendor bill is created in Netsuite for the installation payment made in vision for the installer</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.AutoGenerationSupplierNumber.user_is_logged_into_the_netsuite_application_with_wickes_developer_role()">
+                <span>Given User is logged into the Netsuite Application with Wickes developer role</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_searches_the_vendor_bill_using_saved_search()">
+                <span>When User searches the vendor bill using saved search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_opens_the_installer_vendor_bill()">
+                <span>And User opens the Installer vendor bill</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_verifies_the_header_level_information_are_populated_correctly()">
+                <span>Then User verifies the header level information are populated correctly</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_verifies_the_amounts_are_calculated_correctly_in_expense_and_items_subtab_for_the_installation_only_transaction()">
+                <span>And User verifies the amounts are calculated correctly in Expense and Items subtab for the installation only transaction</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>User verifies the GL Impact details of the installer vendor bill for the installation only transaction</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_is_in_the_installer_vendor_bill_page()">
+                <span>Given User is in the Installer vendor Bill Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.Cost_GroupAndBusiness_Function.user_views_the_GL_Impact_subtab()">
+                <span>When User navigates to the GL Impact subtab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_verifies_the_amounts_are_posted_to_the_correct_cost_accounts_for_the_installation_only_transaction()">
+                <span>Then User verifies the amounts are posted to the correct cost accounts in GL Impact for the Installation only transaction</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>User verifies the installer vendor bill is created in Netsuite for the payment made in vision for the remedial</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.AutoGenerationSupplierNumber.user_is_in_the_netsuite_home_page()">
+                <span>Given User is in the Netsuite HomePage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_searches_the_vendor_bill_using_saved_search()">
+                <span>When User searches the vendor bill using saved search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_opens_the_installer_vendor_bill()">
+                <span>And User opens the Installer vendor bill</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_verifies_the_header_level_information_are_populated_correctly()">
+                <span>Then User verifies the header level information are populated correctly</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_verifies_the_amounts_are_calculated_correctly_in_expense_and_items_subtab_for_the_remedial_only_transaction()">
+                <span>And User verifies the amounts are calculated correctly in Expense and Items subtab for the remedial only transaction</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>User verifies the GL Impact details of the installer vendor bill for the remedial only transaction</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_is_in_the_installer_vendor_bill_page()">
+                <span>Given User is in the Installer vendor Bill Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.Cost_GroupAndBusiness_Function.user_views_the_GL_Impact_subtab()">
+                <span>When User navigates to the GL Impact subtab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_verifies_the_amounts_are_posted_to_the_correct_cost_accounts_in_gl_impact_for_the_remedial_only_transaction()">
+                <span>Then User verifies the amounts are posted to the correct cost accounts in GL Impact for the remedial only transaction</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>User verifies the installer vendor bill is created in Netsuite for the payment made in vision for the installation and remedial</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.AutoGenerationSupplierNumber.user_is_in_the_netsuite_home_page()">
+                <span>Given User is in the Netsuite HomePage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_searches_the_vendor_bill_using_saved_search()">
+                <span>When User searches the vendor bill using saved search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_opens_the_installer_vendor_bill()">
+                <span>And User opens the Installer vendor bill</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_verifies_the_header_level_information_are_populated_correctly()">
+                <span>Then User verifies the header level information are populated correctly</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_verifies_the_amounts_are_calculated_correctly_in_expense_and_items_subtab_for_the_installation_and_remedial_only_transaction()">
+                <span>And User verifies the amounts are calculated correctly in Expense and Items subtab for the installation and remedial only transaction</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>User verifies the GL Impact details of the installer vendor bill for the installation and remedial transaction</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_is_in_the_installer_vendor_bill_page()">
+                <span>Given User is in the Installer vendor Bill Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.Cost_GroupAndBusiness_Function.user_views_the_GL_Impact_subtab()">
+                <span>When User navigates to the GL Impact subtab</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.InstallerVendorBill.user_verifies_the_amounts_are_posted_to_the_correct_cost_accounts_in_gl_impact_for_the_installation_and_remedial_transaction()">
+                <span>Then User verifies the amounts are posted to the correct cost accounts in GL Impact for the installation and remedial transaction</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 24, 2023 07:56:48 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 24, 2023 07:59:54 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>6</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>24</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Vision Installer Vendor Bills":184.449
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>user</td>
+<td>Finance Team</td>
+</tr>
+<tr>
+<td>AppName</td>
+<td>Netsuite </td>
+</tr>
+<tr>
+<td>build</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 6,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 24,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

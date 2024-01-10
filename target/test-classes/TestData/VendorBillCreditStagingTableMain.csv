@@ -1,0 +1,2 @@
+custbody_ns_wbs_edi_gross_value,custbody_ns_wbs_invoicedate,custbody_ns_wbs_po_ref_external,custbody_ns_wbs_source,custbody_ns_wbs_store_reference,duedate,entity,exchangerate,externalid,location,memo,subsidiary,trandate,tranid,currency,Transaction Type
+138.24,19/09/2023,343655,EDI,1360,19/09/2023,T0358,1,T03589510002060,9000,Memo,4,,9510002060,GBP,vendorbill

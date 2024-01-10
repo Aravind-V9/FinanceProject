@@ -1,0 +1,2 @@
+externalId,tranId,vendor,custbody_ns_wbs_source,location,custbody_ns_wbs_store_reference,Subsidiary,currency,exchangeRate,custbody_ns_wbs_po_ref_external,tranDate,dueDate,memo,purchaseItemLine_Item,custcol_ns_wbs_product_code,purchaseItemLine_Quantity,purchaseItemLine_Description,purchaseItemLine_Rate,purchaseItemLine_TaxCode,Original EDI Invoice Gross Value
+M1225B9856000021,B9856000021,M1225,EDI,9000,1270,4,GBP,1,358688,31/08/2023,01/09/2023,Memo,GRNI - Goods Received Not Invoiced,10800013,490.000,Wickes Top Soil 25L,2.0800000,VAT:S-GB,1223.04
